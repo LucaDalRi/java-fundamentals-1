@@ -32,6 +32,5 @@ public class BigliettoTreno {
             String formattedPrice = new DecimalFormat("#.00").format(finalPrice);
             System.out.println("Il prezzo totale è di " + formattedPrice + " euro");
         }
-
     }
 }
