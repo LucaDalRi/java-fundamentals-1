@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 public class BigliettoTreno {
@@ -20,12 +21,15 @@ public class BigliettoTreno {
 
         if (Age > 65) {
             FinalPrice = (FinalPrice - Discount40);
-            System.out.println("Il prezzo totale è di " + FinalPrice + " euro");
+            String formattedPrice = new DecimalFormat("#.00").format(FinalPrice);
+            System.out.println("Il prezzo totale è di " + formattedPrice + " euro");
         } else if (Age < 18) {
             FinalPrice = (FinalPrice - Discount20);
-            System.out.println("Il prezzo totale è di " + FinalPrice + " euro");
+            String formattedPrice = new DecimalFormat("#.00").format(FinalPrice);
+            System.out.println("Il prezzo totale è di " + formattedPrice + " euro");
         } else {
-            System.out.println("Il prezzo totale è di " + FinalPrice + " euro");
+            String formattedPrice = new DecimalFormat("#.00").format(FinalPrice);
+            System.out.println("Il prezzo totale è di " + formattedPrice + " euro");
         }
 
     }
